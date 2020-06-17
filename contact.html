@@ -13,7 +13,6 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    text-align: center;
     margin-bottom: 50px;  
 }
 html, body{
@@ -50,6 +49,7 @@ footer{
     border-style: solid;
     position: relative;
     padding: 20px;
+    text-align: center;
 }
 footer img{
     height: 10px;
@@ -64,12 +64,38 @@ footer p{
     right: 500px;
     display: inline;
 }
-    </style>
+.container-lg{
+    width: 60%;
+    background-color: white;
+    padding: 10px;
+    border: 1px;
+    border-color: #343a40;
+    max-width: 500px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.btn-primary{
+color: #16d6c0;
+border-color: #343a40;
+background-color: #343a40;
+}  
+#contact{
+    color: #16d6c0;
+    font-size: 30px;
+    text-shadow: -0.5px 0 grey, 0 0.5px grey, 0.5px 0 grey, 0 -0.5px grey;
+    border-color: white; 
+    border-bottom: #343a40;
+    border-style: solid;
+    padding-bottom: 20px;
+}
+
+</style>
 </head>
 
 <!--Main Content-->
 <body>
     <div class="wrapper">
+
     <!--Header-->
     <!-- Image and text -->
         <nav class="navbar navbar-dark bg-dark">
@@ -92,11 +118,24 @@ footer p{
 
         <!--Main Body-->
         <div class="container-lg" class="container-md" class="container-sm">
-           
-           
-            100% wide until large, medium and small breakpoints
-        
-        
+           <form>
+               <h1 id="contact">Contact</h1>
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Email</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <small id="emailHelp" class="form-text text-muted">example@gmail.com</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" class="button">Submit</button>
+                </form>
         </div>
 
         <!--Footer-->
